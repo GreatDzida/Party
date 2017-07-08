@@ -6,6 +6,9 @@
  
 </div>
 
+<!--<a routerLink="/main">Heroes</a>
+   <router-outlet></router-outlet>-->
+
 <div class="container-fluid">
   <div class="container">
   <div class="row">
@@ -28,7 +31,7 @@
      <div class="col" >
        <table style="height: 100px;">
          <tr>
-          <td class="align-middle"><button type="button" class="btn btn-primary">Log In</button></td>     
+          <td class="align-middle"><button type="button" (click)="Autenticate()" class="btn btn-primary">Log In</button></td>     
         </tr>
         </tbody>
       </table>
@@ -41,11 +44,60 @@
 <div class="container-fluid" >
   <hr size="30">
   <div class="row">
-    <div class="col">
+    <div class="col-md-2 offset-md-4">
+      <span id="RegistractionText"> Sign Up</span>
       <!--<img src="assets/Logo.jpg" class="img-responsive" alt="Cinque Terre">-->
     </div>
-    <div class="col">
-      <span id="RegistractionText"> Sign Up</span>
+    <div class="col">      
+      
+        <div class="row">
+            <div class="col-lg-3 col-xs-10">
+                 <label for="name">Name</label>
+                  <input type="text" id="name" name="name" class="form-control"
+                  required minlength="3" maxlength="40"> 
+            </div>
+            <div class="col-lg-3 col-xs-10">
+                   <label for="surname">Surname</label>
+                  <input type="text" id="surname" name="surname" class="form-control"
+                  required minlength="3" maxlength="40"> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-xs-10">
+                 <label for="phone">Phone</label>
+                  <input type="text" id="phone" name="phone" class="form-control"
+                  required minlength="3" maxlength="40"> 
+            </div>
+            <div class="col-lg-3 col-xs-10">
+                   <label for="email">Email</label>
+                  <input type="text" id="email" name="email" class="form-control"
+                  required minlength="3" maxlength="40"> 
+            </div>
+        </div>
+        <div class="row .top-buffer">
+
+           
+
+            <!--<!--<div class="col">
+            </div>-->
+            <div class="col-lg-4  top-buffer">
+              <label class="radio-inline radioMale"><input type="radio" name="optradio">Female</label>
+              <label class="radio-inline radioMale"><input type="radio" name="optradio">Male</label>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col offset-lg-4">
+          <table style="height: 100px;">
+            <tbody>
+            <tr>
+              <td class="align-middle"><button type="button" class="btn btn-primary" (click)="CreateAcount()">Create Account</button></td>     
+            </tr>
+            </tbody>
+          </table>
+          </div>
+          </div>
+
+
     </div>
   </div>
  

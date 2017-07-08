@@ -2,13 +2,13 @@
 {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 36px;
-    color: #CA68EB;
+    /*color: #CA68EB;*/
 }
 
 #RegistractionText
 {
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 30px;
+    font-size: 36px;
     color: black;
 }
 
@@ -17,4 +17,14 @@ height: 10px;
 color: #123455;
 background-color: #123455;
 border: none;
+}
+
+.top-buffer { margin-top:20px; }
+
+.radioMale {
+    color: #1d2129;
+    font-size: 20px;
+    /*font-weight: normal;
+    line-height: 18px;*/
+    padding: 0 10px 0 3px;
 }
