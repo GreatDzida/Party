@@ -16,7 +16,8 @@ export class AppComponent {
   }
   Autenticate()
   {
-    alert('Good Work!!');
+       var path = "/main";
+       window.location.href = path;
   }
 
   CreateAcount()

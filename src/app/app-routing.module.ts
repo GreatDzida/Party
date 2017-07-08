@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainComponent }   from './main/main.component';
 import { AppComponent }      from './app.component';
+import { AutenticateComponent }      from './autenticate/autenticate.component';
 // import { HeroDetailComponent }  from './hero-detail.component';
 
 const routes: Routes = [
-//   { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'main',  component: MainComponent },
+  { path: 'autenticate', component: AutenticateComponent},
 //   { path: 'detail/:id', component: HeroDetailComponent },
 //   { path: 'heroes',     component: HeroesComponent }
 ];
