@@ -2,4 +2,19 @@
 {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 36px;
+    color: #CA68EB;
+}
+
+#RegistractionText
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+hr {
+height: 10px;
+color: #123455;
+background-color: #123455;
+border: none;
 }
