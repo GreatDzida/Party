@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms'; // <-- NgModel lives here
+import { HttpModule }    from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,11 +15,14 @@ import { AutenticateComponent } from './autenticate/autenticate.component';
   declarations: [
     AppComponent,
     MainComponent,
-    AutenticateComponent
+    AutenticateComponent,
+    
   ],
   imports: [
     BrowserModule,
+    FormsModule, // <-- import the FormsModule before binding with [(ngModel)]
     NgbModule.forRoot(),
+    HttpModule,
 //     RouterModule.forRoot([
 //   {
 //     path: 'main',
