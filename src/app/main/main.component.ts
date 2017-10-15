@@ -13,7 +13,7 @@ import 'rxjs/add/operator/toPromise';
 
 export class MainComponent implements OnInit {
 
-  private heroesUrl = 'http://localhost:5000/api/values/5';
+  private heroesUrl = 'http://localhost:60196/api/values/5';
   hero : Hero =
   {
     name:'Nazwa'
